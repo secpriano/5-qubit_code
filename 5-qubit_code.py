@@ -1,7 +1,7 @@
 import marimo
 
 __generated_with = "0.14.8"
-app = marimo.App(width="medium")
+app = marimo.App(width="full")
 
 
 @app.cell(hide_code=True)
@@ -231,7 +231,7 @@ def _(
             syndrome_bits = ClassicalRegister(4, 's')
             # Add these register together
             qc = QuantumCircuit(physical_qubits, ancilla_qubits, syndrome_bits)
-        
+
             # Initialize a |0_L>, Logical qubit 0 in 5 physical qubits
             init_logical_state(qc, physical_qubits, '0')
             qc.barrier()
@@ -240,7 +240,7 @@ def _(
             if label == "X[0]":
                 display("Initialize a 5-qubit code circuit with a |0_L> state")
                 display(qc.draw('mpl'))
-                  
+
             # Inject X, Y, and Z error at each physical qubit location
             pauli, tgt = label[0], int(label[2])
             getattr(qc, pauli.lower())(physical_qubits[tgt])
@@ -478,7 +478,7 @@ def _(
                     getattr(qc, pauli.lower())(physical_qubits[idx])
 
         qc.barrier()
-    
+
         # Apply logical Z (ZZZZZ)
         logical_z(qc, physical_qubits)
 

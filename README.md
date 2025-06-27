@@ -10,6 +10,8 @@ A Marimo notebook demonstrating implementation of the 5‑qubit perfect quantum 
 6. Applies error correction via lookup table  
 7. Measures the logical qubit and shows results
 
+Check out the html to look at the Marimo notebook or the png image to see the circuit introducing an error at Y
+ 
 ## Contents
 
 - **Preparation of logical states**  
