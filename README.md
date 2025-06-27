@@ -31,8 +31,8 @@ A Marimo notebook demonstrating implementation of the 5‑qubit perfect quantum 
 
 1. Clone repo  
  ```bash
-   git clone <repo-url>
-   cd 5-qubit-code
+   git clone https://github.com/secpriano/5-qubit_code.git
+   cd 5-qubit_code
 ```
 2. Install dependencies
 ```bash
@@ -44,10 +44,11 @@ uv venv
 ```bash
 uv add marimo
 ```
-3. Run notebook
+3. Open and edit notebook
 ```bash
 marimo edit
 ```
+4. Install dependencies in notebook and run it
 
 ## Explanation
 For deeper understanding, see sections:
