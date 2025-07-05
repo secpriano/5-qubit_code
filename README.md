@@ -10,7 +10,7 @@ A Marimo notebook demonstrating implementation of the 5‑qubit perfect quantum 
 6. Applies error correction via lookup table  
 7. Measures the logical qubit and shows results
 
-Check out the html to look at the Marimo notebook or the png image to see the circuit introducing a $Y$ (bit-flip) error at $q_0$
+Check out the html to look at the Marimo notebook or the png image to see the circuit introducing a $Y$ (bit-flip) error at $q_2$
 
 ![5-qubit_code](https://github.com/user-attachments/assets/15178ee7-cd1d-4f30-bc83-a68e02834f13)
  
