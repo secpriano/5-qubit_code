@@ -2,7 +2,7 @@
 
 A Marimo notebook demonstrating implementation of the 5‑qubit perfect quantum error‑correcting code ([[5,1,3]] code). This notebook:
 
-1. Prepares logical states |0ᴸ⟩ and |1ᴸ⟩  
+1. Prepares logical states $\ket{0_L}$ and $\ket{1_L}$  
 2. Introduces single‑qubit Pauli errors (X, Y, Z)  
 3. Performs syndrome measurement using four stabilizers  
 4. Visualizes the quantum circuit  
@@ -10,14 +10,14 @@ A Marimo notebook demonstrating implementation of the 5‑qubit perfect quantum 
 6. Applies error correction via lookup table  
 7. Measures the logical qubit and shows results
 
-Check out the html to look at the Marimo notebook or the png image to see the circuit introducing an error at Y
+Check out the html to look at the Marimo notebook or the png image to see the circuit introducing a $Y$ (bit-flip) error at $q_0$
 
 ![5-qubit_code](https://github.com/user-attachments/assets/15178ee7-cd1d-4f30-bc83-a68e02834f13)
  
 ## Contents
 
 - **Preparation of logical states**  
-  Initializes the 5‑qubit register into logical |0ᴸ⟩ or |1ᴸ⟩.
+  Initializes the 5‑qubit register into logical $\ket{0_L}$ or $\ket{1_L}$.
 
 - **Error injection**  
   Applies every Pauli error on each physical qubit to generate unique syndromes.
@@ -29,7 +29,7 @@ Check out the html to look at the Marimo notebook or the png image to see the ci
   Builds a mapping from syndrome → correction (Pauli, qubit index). Applies this in the “error‑corrected experiment”.
 
 - **Logical measurement**  
-  Measures ⟨Zᴸ⟩ = Z⊗5 on corrected state to verify correction.
+  Measures $\braket{Z_L}$ = $Z^{\otimes5}$ on corrected state to verify correction.
 
 ## Usage
 
@@ -43,7 +43,20 @@ Check out the html to look at the Marimo notebook or the png image to see the ci
 pip install uv
 uv venv
 ```
-3. Activate the virtual environment
+3. Activate the virtual environment depending on your operating system:
+
+On Linux / macOS:
+```bash
+source venv/bin/activate
+```
+On Windows (CMD):
+```bash
+venv\Scripts\activate.bat
+```
+On Windows (PowerShell):
+```bash
+venv\Scripts\Activate.ps1
+```
 4. Install marimo (notebook) 
 ```bash
 uv add marimo
