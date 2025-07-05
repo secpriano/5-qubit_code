@@ -47,15 +47,15 @@ uv venv
 
 On Linux / macOS:
 ```bash
-source venv/bin/activate
+source .venv/bin/activate
 ```
 On Windows (CMD):
 ```bash
-venv\Scripts\activate.bat
+.venv\Scripts\activate.bat
 ```
 On Windows (PowerShell):
 ```bash
-venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
 ```
 4. Install marimo (notebook) 
 ```bash
