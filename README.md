@@ -3,7 +3,7 @@
 A Marimo notebook demonstrating implementation of the 5‑qubit perfect quantum error‑correcting code ([[5,1,3]] code). This notebook:
 
 1. Prepares logical states $\ket{0_L}$ and $\ket{1_L}$  
-2. Introduces single‑qubit Pauli errors (X, Y, Z)  
+2. Introduces single‑qubit Pauli errors ($X$, $Y$, $Z$)  
 3. Performs syndrome measurement using four stabilizers  
 4. Visualizes the quantum circuit  
 5. Collects and displays syndrome results in a DataFrame  
